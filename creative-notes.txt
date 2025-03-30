@@ -1,0 +1,14 @@
+Sunlight Right is a web app that aims to promote people to go outside and increase their sun exposure in order to strengthen their health.
+
+Benefits of Sunlight
+
+- Physical
+  - stronger immune system
+  - bone growth and formation
+  - calcium absorbtion from food to bloodstream
+
+- Mental
+
+
+FEATURES
+- User can see how much sunlight they need based on skin tone, location, and current weather (MAIN)

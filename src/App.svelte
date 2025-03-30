@@ -2,10 +2,32 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
+
+  import Header from './routes/Header.svelte'
+  let name = $state('Scott');
+
+  let status: 'OPEN' | 'CLOSED' = $state('OPEN')
+
+  let full_name = $derived(name + " " + "Rada")
+
+  function toggle() {
+    status = status === 'OPEN' ? 'CLOSED' : 'OPEN'
+  }
 </script>
 
 <main>
-  <div>
+
+  <Header {name} fake_name="Wes"/>
+
+  <h2>{full_name}</h2>
+
+  <input type="text" bind:value={name} />
+
+  <p>The store is now {status}</p>
+
+  <button onclick={toggle}>Toggle Status</button>
+
+  <!-- <div>
     <a href="https://vite.dev" target="_blank" rel="noreferrer">
       <img src={viteLogo} class="logo" alt="Vite Logo" />
     </a>
@@ -25,8 +47,9 @@
 
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
-  </p>
+  </p> -->
 </main>
+
 
 <style>
   .logo {
