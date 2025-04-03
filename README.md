@@ -45,3 +45,28 @@ If you have state that's important to retain within a component, consider creati
 import { writable } from 'svelte/store'
 export default writable(0)
 ```
+
+**Goal**
+The Sunlight Right web application is intended to bring health awareness to everyone by promoting the use of vitamin D via sunlight exposure or supplementation.
+
+Features
+- Tells user how much sunlight they need in order to get a determined amount of vitamin D (International Units)
+  - Using Open Meteo API https://open-meteo.com/en/docs
+  - Factors: skin surface area exposure, skin tone, weather (direct solar radiation watts/per square meter)
+  - Research questions to find answers to:
+    - how much melanin blocks solar radiation?
+      - TBD
+    - what specific UV ray causes vitamin D production?
+      - UVB which only comprises 5% of UV rays and the rest of it is UVA.
+    - how much square inch of exposed skin produces vitamin D?
+      - TBD
+    - 
+
+
+**Finished Tasks**
+
+
+**Current Tasks**
+
+
+**Future Tasks**
